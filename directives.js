@@ -16,14 +16,14 @@ app.directive('status', function () {
     .directive('connection', function () {
         return {
             restrict: 'E',
-            templateUrl: 'connection-interface.html'
+            templateUrl: 'templates/connection-interface.html'
         };
     })
 
     .directive('cards', function () {
         return {
             restrict: 'E',
-            templateUrl: 'cards.html'
+            templateUrl: 'templates/cards.html'
         };
     })
 
@@ -35,7 +35,7 @@ app.directive('status', function () {
             },
 
             // to have nested templates one needs to use the templateCache
-            templateUrl: 'card.html',
+            templateUrl: 'templates/card.html',
 
             controller: function ($scope, GameEvents) {
                 $scope.chooseProperty = function (propertyName) {
@@ -52,6 +52,6 @@ app.directive('status', function () {
     .directive('scores', function () {
         return {
             restrict: 'E',
-            templateUrl: 'scores.html'
+            templateUrl: 'templates/scores.html'
         };
     });
