@@ -33,7 +33,7 @@ app.controller('MainController',
                 // Do we need to celebrate for too long?
                 $timeout(function () {
                     nextTurn(didIwin);
-                }, 1500);
+                }, 3500);
             },
 
             init = function () {
