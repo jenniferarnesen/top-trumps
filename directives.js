@@ -52,6 +52,14 @@ app.directive('status', function () {
     .directive('scores', function () {
         return {
             restrict: 'E',
-            templateUrl: 'scores.html'
+            template: '<aside class="scores-wrapper">' +
+                              '<h2 class="scores-header">Scores</h2>' +
+                                '<dl class="scores-container">' +
+                                    '<dt>Me</dt>' +
+                                    '<dd>{{scores.me}}</dd>' +
+                                    '<dt>Opponent</dt>' +
+                                    '<dd>{{scores.opponent}}</dd>' +
+                                '</dl>' +
+                            '</aside>'
         };
     });
