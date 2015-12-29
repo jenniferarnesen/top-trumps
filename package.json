@@ -1,0 +1,12 @@
+{
+  "name": "top-trumps",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server --port 4500"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  }
+}

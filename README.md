@@ -14,10 +14,14 @@ introduce actual learning cards.
 
 Eventually I also want to introduce actual card trading.
 
-# Get playing
+# Get developing and playing
 
-For developers, set up a basic webserver and serve up index.html
-(upcoming improvement - introduce a basic node server or lite server)
+bower install
+npm install
+npm start (runs on localhost:4500)
+
+npm start will start up lite-server and automatically open index.html in a browser. The second
+player also needs to open localhost:4500 in their browser.
 
 This is a two-player game. Find someone to play with, and each player goes to the webpage.
 The first player needs to send the second player their id they have been given. The second player
