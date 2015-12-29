@@ -17,7 +17,7 @@ app
         scope: {},
 
         // to have nested templates one needs to use the templateCache
-        templateUrl: '../../card.html',
+        templateUrl: '../card.html',
 
         controller: 'CardController',
 
