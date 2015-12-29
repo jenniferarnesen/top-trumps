@@ -25,41 +25,4 @@ app.directive('status', function () {
             restrict: 'E',
             templateUrl: 'cards.html'
         };
-    })
-
-    .directive('card', function () {
-        return {
-            restrict: 'E',
-            scope: {
-                data: '='
-            },
-
-            // to have nested templates one needs to use the templateCache
-            templateUrl: 'card.html',
-
-            controller: function ($scope, GameEvents) {
-                $scope.chooseProperty = function (propertyName) {
-                    $scope.$emit(GameEvents.PROPERTY_CHOSEN, propertyName);
-                };
-            },
-
-            link: function (scope, element) {
-                element.addClass('card-directive');
-            }
-        };
-    })
-
-    .directive('scores', function () {
-        return {
-            restrict: 'E',
-            template: '<aside class="scores-wrapper">' +
-                              '<h2 class="scores-header">Scores</h2>' +
-                                '<dl class="scores-container">' +
-                                    '<dt>Me</dt>' +
-                                    '<dd>{{scores.me}}</dd>' +
-                                    '<dt>Opponent</dt>' +
-                                    '<dd>{{scores.opponent}}</dd>' +
-                                '</dl>' +
-                            '</aside>'
-        };
     });
