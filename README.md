@@ -16,7 +16,6 @@ Eventually I also want to introduce actual card trading.
 
 # Get developing and playing
 
-bower install
 npm install
 npm start (runs on localhost:4500)
 
