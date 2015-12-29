@@ -18,11 +18,4 @@ app.directive('status', function () {
             restrict: 'E',
             templateUrl: 'connection-interface.html'
         };
-    })
-
-    .directive('cards', function () {
-        return {
-            restrict: 'E',
-            templateUrl: 'cards.html'
-        };
     });
