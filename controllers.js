@@ -1,6 +1,5 @@
 app.controller('MainController',
     function ($scope, $timeout, GameEvents, Utils, Storage, Connection) {
-        //var callbacks = ConnectionEvents($scope),
         var callbacks = {
                 onRegisterIdWithPeerServer: function (id) {
                     $scope.myId = id;

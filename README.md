@@ -16,8 +16,8 @@ Eventually I also want to introduce actual card trading.
 
 # Get developing and playing
 
-npm install
-npm start (runs on localhost:4500)
+* npm install
+* npm start (runs on localhost:4500)
 
 npm start will start up lite-server and automatically open index.html in a browser. The second
 player also needs to open localhost:4500 in their browser.
